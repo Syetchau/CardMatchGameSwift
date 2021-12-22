@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A42F77902764BC9F0045F25D /* CardModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A42F778F2764BC9F0045F25D /* CardModel.swift */; };
+		A42F77922764C15D0045F25D /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = A42F77912764C15D0045F25D /* Card.swift */; };
+		A42F77942764D13E0045F25D /* CardCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A42F77932764D13E0045F25D /* CardCollectionViewCell.swift */; };
+		A49B1629276B72CA005B4961 /* dingcorrect.wav in Resources */ = {isa = PBXBuildFile; fileRef = A49B1625276B72CA005B4961 /* dingcorrect.wav */; };
+		A49B162A276B72CA005B4961 /* cardflip.wav in Resources */ = {isa = PBXBuildFile; fileRef = A49B1626276B72CA005B4961 /* cardflip.wav */; };
+		A49B162B276B72CA005B4961 /* shuffle.wav in Resources */ = {isa = PBXBuildFile; fileRef = A49B1627276B72CA005B4961 /* shuffle.wav */; };
+		A49B162C276B72CA005B4961 /* dingwrong.wav in Resources */ = {isa = PBXBuildFile; fileRef = A49B1628276B72CA005B4961 /* dingwrong.wav */; };
+		A49B162E276B7332005B4961 /* SoundManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A49B162D276B7332005B4961 /* SoundManager.swift */; };
 		A4B8040D2760E3B300632A0B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4B8040C2760E3B300632A0B /* AppDelegate.swift */; };
 		A4B8040F2760E3B300632A0B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4B8040E2760E3B300632A0B /* SceneDelegate.swift */; };
 		A4B804112760E3B300632A0B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4B804102760E3B300632A0B /* ViewController.swift */; };
@@ -16,6 +24,14 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A42F778F2764BC9F0045F25D /* CardModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardModel.swift; sourceTree = "<group>"; };
+		A42F77912764C15D0045F25D /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
+		A42F77932764D13E0045F25D /* CardCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardCollectionViewCell.swift; sourceTree = "<group>"; };
+		A49B1625276B72CA005B4961 /* dingcorrect.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = dingcorrect.wav; sourceTree = "<group>"; };
+		A49B1626276B72CA005B4961 /* cardflip.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = cardflip.wav; sourceTree = "<group>"; };
+		A49B1627276B72CA005B4961 /* shuffle.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = shuffle.wav; sourceTree = "<group>"; };
+		A49B1628276B72CA005B4961 /* dingwrong.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = dingwrong.wav; sourceTree = "<group>"; };
+		A49B162D276B7332005B4961 /* SoundManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundManager.swift; sourceTree = "<group>"; };
 		A4B804092760E3B300632A0B /* CardMatchGame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CardMatchGame.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A4B8040C2760E3B300632A0B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A4B8040E2760E3B300632A0B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -37,6 +53,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A49B1624276B7265005B4961 /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				A49B1626276B72CA005B4961 /* cardflip.wav */,
+				A49B1625276B72CA005B4961 /* dingcorrect.wav */,
+				A49B1628276B72CA005B4961 /* dingwrong.wav */,
+				A49B1627276B72CA005B4961 /* shuffle.wav */,
+			);
+			path = Sounds;
+			sourceTree = "<group>";
+		};
+		A49B162F276B734A005B4961 /* SoundUtil */ = {
+			isa = PBXGroup;
+			children = (
+				A49B162D276B7332005B4961 /* SoundManager.swift */,
+			);
+			path = SoundUtil;
+			sourceTree = "<group>";
+		};
 		A4B804002760E3B300632A0B = {
 			isa = PBXGroup;
 			children = (
@@ -56,15 +91,44 @@
 		A4B8040B2760E3B300632A0B /* CardMatchGame */ = {
 			isa = PBXGroup;
 			children = (
-				A4B8040C2760E3B300632A0B /* AppDelegate.swift */,
+				A4B970E02765F180008C6A3D /* CollectionViewCells */,
+				A4B970DF2765F0BF008C6A3D /* ViewControllers */,
+				A4B970DE2765F0AA008C6A3D /* Models */,
+				A49B1624276B7265005B4961 /* Sounds */,
+				A49B162F276B734A005B4961 /* SoundUtil */,
 				A4B8040E2760E3B300632A0B /* SceneDelegate.swift */,
-				A4B804102760E3B300632A0B /* ViewController.swift */,
+				A4B8040C2760E3B300632A0B /* AppDelegate.swift */,
 				A4B804122760E3B300632A0B /* Main.storyboard */,
 				A4B804152760E3B300632A0B /* Assets.xcassets */,
 				A4B804172760E3B300632A0B /* LaunchScreen.storyboard */,
 				A4B8041A2760E3B300632A0B /* Info.plist */,
 			);
 			path = CardMatchGame;
+			sourceTree = "<group>";
+		};
+		A4B970DE2765F0AA008C6A3D /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				A42F77912764C15D0045F25D /* Card.swift */,
+				A42F778F2764BC9F0045F25D /* CardModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		A4B970DF2765F0BF008C6A3D /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				A4B804102760E3B300632A0B /* ViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		A4B970E02765F180008C6A3D /* CollectionViewCells */ = {
+			isa = PBXGroup;
+			children = (
+				A42F77932764D13E0045F25D /* CardCollectionViewCell.swift */,
+			);
+			path = CollectionViewCells;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,9 +189,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A49B162B276B72CA005B4961 /* shuffle.wav in Resources */,
+				A49B162C276B72CA005B4961 /* dingwrong.wav in Resources */,
 				A4B804192760E3B300632A0B /* LaunchScreen.storyboard in Resources */,
 				A4B804162760E3B300632A0B /* Assets.xcassets in Resources */,
 				A4B804142760E3B300632A0B /* Main.storyboard in Resources */,
+				A49B1629276B72CA005B4961 /* dingcorrect.wav in Resources */,
+				A49B162A276B72CA005B4961 /* cardflip.wav in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,8 +206,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A42F77922764C15D0045F25D /* Card.swift in Sources */,
 				A4B804112760E3B300632A0B /* ViewController.swift in Sources */,
+				A42F77902764BC9F0045F25D /* CardModel.swift in Sources */,
 				A4B8040D2760E3B300632A0B /* AppDelegate.swift in Sources */,
+				A42F77942764D13E0045F25D /* CardCollectionViewCell.swift in Sources */,
+				A49B162E276B7332005B4961 /* SoundManager.swift in Sources */,
 				A4B8040F2760E3B300632A0B /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -289,11 +361,13 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = AQ9Q92NR2V;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = CardMatchGame/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -316,11 +390,13 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = AQ9Q92NR2V;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = CardMatchGame/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
